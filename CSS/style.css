@@ -1,3 +1,5 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+
 *{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -23,6 +25,7 @@ img{
 
 img:hover{
     opacity: 1;
+    cursor: pointer;
 }
 
 p.para{
@@ -32,7 +35,7 @@ p.para{
     letter-spacing: 20px;
     word-spacing: 20px;
     line-height: 50px;
-    white-space: pre;
+   
     }
 
 
@@ -54,13 +57,66 @@ p.para{
     background-color: black;
 }
 
-a{
-  
-    text-decoration-thickness: auto;
-    font-size: 300px;
+.linka{
     text-decoration: none;
+    color: red;
+    border: 1px solid black;
+    padding: 5px 20px;
 }
+
+.linka:visited{
+    color: black;
+    background-color: white;
+}
+
+
+.linka:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
 
 .heading{
     text-shadow: 3px 3px 5px white ;
 }
+
+.lists{
+    list-style-type: none;
+    background-color: black;
+}
+
+ 
+
+.lists li a{
+    text-decoration: none;
+    padding: 10px 20px;
+    display: inline-block;
+    color: white;
+   }
+
+
+.lists li{   
+    display: inline;
+}
+
+
+
+
+.lists li a:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+table, table th, table td{
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 10px;
+}
+
+table th{
+    text-align: left;
+    height: 100px;
+}
+
+
