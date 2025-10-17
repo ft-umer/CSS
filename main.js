@@ -69,14 +69,20 @@
 // }
 
 
-// const person = {};
+const person = function(first, last, age) {
+  this.firstName = first;
+  this.lastName = last;
+  this.age = age;
+  this.defaultCity = "FSD";
+}
 
-// person.firstName = "John";
-// person.lastName = "Doe";
-// person.age = 50;
-// person.eyeColor = "blue";
+const person1 = new person("John", "Doe", 30);
+const person2 = new person("Mary", "Doe", 25);
+const person3 = new person("Ali", "Khan", 28);
 
-
+document.getElementById("result").innerHTML = person1.firstName + " is " + person1.age + " years old." + " lives in " + person1.defaultCity + ".";
+document.getElementById("result1").innerHTML = person2.firstName + " is " + person2.age + " years old." + " lives in " + person2.defaultCity + ".";
+document.getElementById("result2").innerHTML = person3.firstName + " is " + person3.age + " years old." + " lives in " + person3.defaultCity + ".";
 
 
 // document.getElementById("result").innerHTML = person.firstName + " is " + person.age + " years old.";
